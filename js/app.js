@@ -474,8 +474,8 @@
       (p.intro ? '<p class="film-syn">' + esc(p.intro) + '</p>' : '') + '</div>' +
       ((p.videos || []).length ? '<section class="wrap stills" aria-label="Videos"><div class="stills-head"><span class="meta">Videos</span><span class="meta">' + p.videos.length + '</span></div>' +
         '<div class="pv-grid">' + p.videos.map(function (v) {
-          return '<figure class="pv-item"><div class="pv-frame"><iframe src="' + esc(v.embed) + '" title="' + esc(v.title || p.name) + '" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen scrolling="no"></iframe></div>' +
-            '<figcaption><span class="st-cap">' + esc(v.title || '') + '</span>' + (v.link ? '<a class="st-place" href="' + esc(v.link) + '" target="_blank" rel="noopener">Watch on Instagram ↗</a>' : '') + '</figcaption></figure>';
+          return '<figure class="pv-item' + (v.type ? ' pv-' + esc(v.type) : '') + '"><div class="pv-frame"><iframe src="' + esc(v.embed) + '" title="' + esc(v.title || p.name) + '" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen scrolling="no"></iframe></div>' +
+            '<figcaption><span class="st-cap">' + esc(v.title || '') + '</span>' + (v.link ? '<a class="st-place" href="' + esc(v.link) + '" target="_blank" rel="noopener">' + esc(v.linkLabel || 'Watch on Instagram') + ' ↗</a>' : '') + '</figcaption></figure>';
         }).join('') + '</div></section>' : '') +
       (fl.length ? '<section class="wrap stills" aria-label="Films"><div class="stills-head"><span class="meta">Films</span><span class="meta">' + fl.length + '</span></div>' +
         '<div class="other">' + fl.map(function (f) {
@@ -943,7 +943,7 @@
     if (window.FM_fx) window.FM_fx(wantFx);
     else if (wantFx && !document.getElementById('fx-js')) {
       window.FM_FX_AUTOSTART = true;
-      var fxs = document.createElement('script'); fxs.id = 'fx-js'; fxs.src = 'js/fx.js?v=20261103b'; document.body.appendChild(fxs);
+      var fxs = document.createElement('script'); fxs.id = 'fx-js'; fxs.src = 'js/fx.js?v=20261103c'; document.body.appendChild(fxs);
     }
     Array.prototype.forEach.call(document.querySelectorAll('.style-pick button'), function (b) {
       b.setAttribute('aria-pressed', String(b.getAttribute('data-style') === name));

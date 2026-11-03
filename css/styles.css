@@ -1213,3 +1213,7 @@ body.pal-saffron {
 .pv-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 .pv-item figcaption { display: flex; align-items: baseline; gap: 12px; padding: 14px 2px 0; }
 @media (max-width: 560px) { .pv-frame { height: 600px; } }
+/* LinkedIn video embed: landscape post card */
+.pv-item.pv-linkedin { width: min(100%, 640px); }
+.pv-linkedin .pv-frame { height: 720px; background: #fff; }
+@media (max-width: 560px) { .pv-linkedin .pv-frame { height: 640px; } }

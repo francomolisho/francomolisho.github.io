@@ -440,9 +440,9 @@ window.SITE = {
       "intro": "", "cover": "", "gallery": [], "films": [] },
     { "id": "kivu-travel", "name": "Kivu Travel", "full": "Kivu Travel", "years": "2024 — 2026", "roles": ["Director", "Cinematographer"],
       "intro": "Travel and tourism films in Burundi and DR Congo, including river journeys through the equatorial forest.",
-      "cover": "images/nature-travel/drc-equatorial-forest.jpg", "coverFocus": "50% 55%",
-      "gallery": ["images/nature-travel/drc-equatorial-forest.jpg", "images/behind-the-scenes/bts-01.jpg"], "films": [],
-      "videos": [{ "title": "Burundi", "embed": "https://www.instagram.com/p/DfRcoEmjKS5/embed/", "link": "https://www.instagram.com/p/DfRcoEmjKS5/" }] }
+      "cover": "images/kivu-travel/burundi-01.jpg", "coverFocus": "50% 60%",
+      "gallery": ["images/kivu-travel/burundi-01.jpg", "images/kivu-travel/burundi-02.jpg", "images/kivu-travel/burundi-03.jpg", "images/kivu-travel/burundi-04.jpg", "images/nature-travel/drc-equatorial-forest.jpg", "images/behind-the-scenes/bts-01.jpg"], "films": [],
+      "videos": [{ "title": "Burundi", "type": "linkedin", "embed": "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7523371187390070784", "link": "https://www.linkedin.com/posts/franco-molisho-0279a8251_burundi-visitburundi-africanstories-ugcPost-7523371187390070784-rU_c/", "linkLabel": "Watch on LinkedIn" }] }
   ],
 
   "experience": [
