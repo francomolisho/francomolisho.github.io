@@ -1,0 +1,7 @@
+# Netlify: always check for the newest version of the page, scripts and styles
+/*
+  Cache-Control: no-cache
+/images/*
+  Cache-Control: public, max-age=86400
+/video/*
+  Cache-Control: public, max-age=86400
